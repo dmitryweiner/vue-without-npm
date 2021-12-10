@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="/js/vue.min.js"></script>
+    <script src="/js/component.js"></script>
+</head>
+<body>
+<div id="root">
+    <custom-tag/>
+</div>
+<script>
+    Vue.component("custom-tag", Component);
+    const app = new Vue({
+        el: "#root",
+    });
+</script>
+</body>
+</html>
